@@ -509,24 +509,41 @@ body {
 
 .video-container {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  border-radius: 18px;
-  transform: translate(-50%, -50%);
-  background-color: #fff;
-  padding: 20px 10px;
+  width: 100%;
+  top: 0;
+  left: 0;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
 }
-
+.video-cont{
+  width: 800px;
+  height: 400px;
+  background-color: white;
+}
+.videoFrame{
+  width: 100%;
+  height: auto;
+}
 #videoPlayer {
   width: 100%;
 }
+
 
 #playPauseBtn,
 #closePopup {
   display: block;
   margin-top: 10px;
 }
-
+@media (max-width:860px){
+  .video-cont{
+    width: 80%;
+    height: calc(80%/2);
+  }
+}
 
 
 
